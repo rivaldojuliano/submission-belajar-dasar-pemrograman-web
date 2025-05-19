@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
@@ -176,6 +174,7 @@ main .content #skills .content-skills section{
 main .content #skills .content-skills section .backend-skills {
     padding: 4rem;
     border: 3px solid #FF9100;
+    box-shadow: 4px 2px 6px #FF9100;
     background-color: #333646;
     border-radius: 10px;
     align-items: center;
@@ -185,6 +184,7 @@ main .content #skills .content-skills section .backend-skills {
 main .content #skills .content-skills section .frontend-skills{
     padding: 4rem;
     border: 3px solid #FF9100;
+    box-shadow: 4px 2px 6px #FF9100;
     background-color: #333646;
     border-radius: 10px;
     align-items: center;
@@ -193,6 +193,7 @@ main .content #skills .content-skills section .frontend-skills{
 
 main aside {
     position: fixed;
+    flex-direction: column;
     inset-block: 0;
     inset-inline-end: 0;
 }
@@ -244,6 +245,7 @@ footer {
 @media screen and (max-width: 768px) {
     header.navbar-container {
         flex-wrap: wrap;
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -251,6 +253,8 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
+        padding-left: 2rem;
+        margin-top: 0;
     }
 
     header.navbar-container .navbar-list ul.show {
