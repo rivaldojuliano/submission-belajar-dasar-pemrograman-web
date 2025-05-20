@@ -157,6 +157,7 @@ main .content #skills .content-skills {
 }
 
 main .content #skills .content-skills .title-skills {
+  padding-top: 2rem;
   color: white;
   text-align: center;
   font-weight: 700;
@@ -191,13 +192,31 @@ main .content #skills .content-skills section .frontend-skills {
 }
 
 main aside {
-  position: fixed;
+  display: flex;
   flex-direction: column;
-  inset-block: 0;
-  inset-inline-end: 0;
+}
+
+main aside .profile-card {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  border: 3px solid #ff9100;
+  border-radius: 10px;
+  box-shadow: 4px 2px 6px #ff9100;
+  color: white;
+  flex: 1;
+  flex-direction: row;
+}
+
+main aside .profile-card img {
+  width: 200px;
 }
 
 main aside .social-media {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
   height: 100%;
   display: flex;
 }
@@ -239,6 +258,7 @@ footer {
   padding: 2rem;
   background-color: #333646;
   color: white;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
